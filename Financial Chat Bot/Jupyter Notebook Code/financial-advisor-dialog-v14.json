@@ -1,0 +1,846 @@
+{
+  "name": "Financial Advisor-dialog",
+  "type": "dialog",
+  "valid": true,
+  "counts": {
+    "intents": 4,
+    "entities": 10,
+    "dialog_nodes": 12
+  },
+  "status": "Available",
+  "created": "2022-04-16T18:53:44.334Z",
+  "updated": "2022-04-16T18:53:44.334Z",
+  "language": "en",
+  "skill_id": "91aff3df-95be-4e34-9d95-d678f6d5cb55",
+  "snapshot": "14",
+  "workspace": {
+    "created": "2022-04-16T18:53:44.334Z",
+    "intents": [
+      {
+        "intent": "sector_of_interest",
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "examples": [
+          {
+            "text": "I am interested in Communication Services",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "I am interested in Materials",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "I am interested in Real Estate",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "I am interested in Utilities",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "I am interested in Consumer Staples",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "I am interested in Energy",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "I am interested in Information Technology",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "mentions": [
+              {
+                "entity": "sectors",
+                "created": "2022-04-16T18:53:46.679Z",
+                "updated": "2022-04-16T18:53:46.679Z",
+                "location": [
+                  19,
+                  41
+                ]
+              }
+            ]
+          },
+          {
+            "text": "I am interested in Health Care",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "mentions": [
+              {
+                "entity": "sectors",
+                "created": "2022-04-16T18:53:46.679Z",
+                "updated": "2022-04-16T18:53:46.679Z",
+                "location": [
+                  19,
+                  30
+                ]
+              }
+            ]
+          },
+          {
+            "text": "I am interested in Financials",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "I am interested in Consumer Discretionary",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "I am interested in Industrials",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          }
+        ],
+        "description": ""
+      },
+      {
+        "intent": "refuse_to_use",
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "examples": [
+          {
+            "text": "Refused",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "No",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "False",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "I do not want to continue",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "Nope",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "Negative",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          }
+        ],
+        "description": ""
+      },
+      {
+        "intent": "what_can_you_do",
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "examples": [
+          {
+            "text": "See how I can help",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "What can you do for me?",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "What can you do?",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "what can you do",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "What can you do for me",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "Can you help me invest",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          }
+        ],
+        "description": ""
+      },
+      {
+        "intent": "willing_to_use",
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "examples": [
+          {
+            "text": "Ok",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "Yes, I'd like to continue.",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "I'd like to continue",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "I would like to continue",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "Yes",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          },
+          {
+            "text": "Sure",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z"
+          }
+        ],
+        "description": ""
+      }
+    ],
+    "updated": "2022-04-16T18:53:44.334Z",
+    "entities": [
+      {
+        "entity": "risk_neutral",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "indifference",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "risk-neutral",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "risk neutral",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          }
+        ],
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "fuzzy_match": true
+      },
+      {
+        "entity": "sectors",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "Consumer Discretionary",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Communication Services",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Industrials",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Consumer Staples",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Health Care",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Real Estate",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Utilities",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Materials",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Energy",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Financials",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Information Technology",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          }
+        ],
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "fuzzy_match": true
+      },
+      {
+        "entity": "sys-number",
+        "values": [],
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "fuzzy_match": true
+      },
+      {
+        "entity": "No",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "NO",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": [
+              "don't",
+              "not",
+              "false",
+              "negative",
+              "Nope"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "2",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          }
+        ],
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "fuzzy_match": true
+      },
+      {
+        "entity": "Minimizing_risk",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "minimizing-risk",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Minimizing risk",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": [
+              "minimizing risk"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "I prefer to minimizing risk",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "minimizing risks",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          }
+        ],
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "fuzzy_match": true
+      },
+      {
+        "entity": "risk_averse",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "do not like to take risk",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "risk averse",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "hate risk",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "risk-averse",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          }
+        ],
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "fuzzy_match": true
+      },
+      {
+        "entity": "sys-currency",
+        "values": [],
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "fuzzy_match": true
+      },
+      {
+        "entity": "equally-distributed-risk",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "equally distributed risk",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "equally-distributed risk",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "I prefer equally-distributed risk",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "Equally distributed",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": [
+              "equally",
+              "Equally-distributed"
+            ]
+          }
+        ],
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "fuzzy_match": true
+      },
+      {
+        "entity": "Yes",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "yes",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": [
+              "okay",
+              "fine",
+              "sure",
+              "ok",
+              "positive"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "1",
+            "created": "2022-04-16T18:53:46.679Z",
+            "updated": "2022-04-16T18:53:46.679Z",
+            "synonyms": []
+          }
+        ],
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "fuzzy_match": true
+      },
+      {
+        "entity": "sys-percentage",
+        "values": [],
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "fuzzy_match": true
+      }
+    ],
+    "language": "en",
+    "metadata": {
+      "skill": {
+        "counts": {
+          "intents": 4,
+          "entities": 10,
+          "dialog_nodes": 12
+        }
+      },
+      "api_version": {
+        "major_version": "v2",
+        "minor_version": "2018-11-08"
+      }
+    },
+    "dialog_nodes": [
+      {
+        "type": "standard",
+        "title": "sectors",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Which of fellowing sectors are you interested in? Information Technology, Health Care, Financials, Consumer Discretionary, Communication Services, Industrials, Consumer Staples, Energy, Utilities, Real Estate, Materials (Please separate each sector with comma and a space, e.g. Energy, Utilities)"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_9_1649991209487",
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "conditions": "@sys-percentage || @sys-number",
+        "dialog_node": "node_9_1649991523458"
+      },
+      {
+        "type": "standard",
+        "title": "leverage",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Okay! You are all set! "
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_3_1649991980851",
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "conditions": "@sys-number",
+        "dialog_node": "node_5_1649992075203"
+      },
+      {
+        "type": "standard",
+        "title": "risk neutral",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Do you wish to take leverage(x2)?  'Yes' enter 1, 'No' enter 2."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_1_1649991678098",
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "conditions": "@risk_neutral",
+        "dialog_node": "node_3_1649991980851",
+        "previous_sibling": "node_5_1649991816634"
+      },
+      {
+        "type": "standard",
+        "title": "risk-averse",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Which do you prefer: minimizing risk or equally-distributed risk? "
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_1_1649991678098",
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "conditions": "@risk_averse",
+        "dialog_node": "node_5_1649991816634"
+      },
+      {
+        "type": "standard",
+        "title": "End1",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Thank you for using robo advisor. Have a nice day!"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "Welcome",
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "conditions": "#refuse_to_use",
+        "dialog_node": "node_8_1649990728337",
+        "previous_sibling": "node_9_1649990712988"
+      },
+      {
+        "type": "standard",
+        "title": "Investment total",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "What is your total amount of investment?  (Please enter numeric value answers only, e.g. 1000 for 1000 cad)"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "Welcome",
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "conditions": "#willing_to_use",
+        "dialog_node": "node_9_1649990712988"
+      },
+      {
+        "type": "standard",
+        "title": "cash portion",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "How much cash would you like to keep (at least) in your portfolio? (Please enter percentage answers only, e.g. 20%) "
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_9_1649990712988",
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "conditions": "@sys-currency || @sys-number",
+        "dialog_node": "node_9_1649991209487"
+      },
+      {
+        "type": "standard",
+        "title": "risk preference",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Do you consider yourself risk-averse or risk-neutral?"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_9_1649991523458",
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "conditions": "@sectors",
+        "dialog_node": "node_1_1649991678098"
+      },
+      {
+        "type": "standard",
+        "title": "If risk-averse",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Okay! You are all set! "
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "parent": "node_5_1649991816634",
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "conditions": "@Minimizing_risk || @equally-distributed-risk",
+        "dialog_node": "node_3_1649992072303"
+      },
+      {
+        "type": "standard",
+        "title": "Anything else - copy 1",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "I didn't understand. You can try rephrasing."
+                },
+                {
+                  "text": "Can you reword your statement? I'm not understanding."
+                },
+                {
+                  "text": "I didn't get your meaning."
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "conditions": "anything_else",
+        "dialog_node": "node_34_1649991447864",
+        "previous_sibling": "Anything else"
+      },
+      {
+        "type": "standard",
+        "title": "welcome",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Hello. How can I help you?"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "conditions": "anything_else",
+        "dialog_node": "Anything else",
+        "previous_sibling": "Welcome",
+        "disambiguation_opt_out": true
+      },
+      {
+        "type": "standard",
+        "title": "Welcome",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Hello. I am your Robo Advisor. I can suggest you investment strategies based on your preferences. Would you like to continue?"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "created": "2022-04-16T18:53:46.679Z",
+        "updated": "2022-04-16T18:53:46.679Z",
+        "conditions": "#what_can_you_do",
+        "dialog_node": "Welcome"
+      }
+    ],
+    "counterexamples": [],
+    "system_settings": {
+      "disambiguation": {
+        "prompt": "Did you mean:",
+        "enabled": true,
+        "randomize": true,
+        "max_suggestions": 5,
+        "suggestion_text_policy": "title",
+        "none_of_the_above_prompt": "None of the above"
+      },
+      "human_agent_assist": {
+        "prompt": "Did you mean:"
+      },
+      "intent_classification": {
+        "training_backend_version": "v2"
+      },
+      "spelling_auto_correct": true
+    },
+    "learning_opt_out": false
+  },
+  "description": "_",
+  "assistant_id": "160b1ab7-5d17-4fc9-b58e-d559693a2895",
+  "dialog_settings": {
+    "source_assistant": "5e46f611-1584-417f-8a59-1c24c1d4ea51"
+  },
+  "assistant_references": [
+    {
+      "name": "live",
+      "assistant_id": "5e46f611-1584-417f-8a59-1c24c1d4ea51",
+      "skill_reference": "main skill"
+    }
+  ]
+}
